@@ -1,0 +1,23 @@
+#!/bin/bash
+
+git stash
+
+branch=$(git branch | grep "dev" | tr -d '[[:space:]]')
+if [ -z "$branch" ]; then
+	# no branch that has dev in the name
+	branch="master"
+fi
+
+remote=$(git remote | sed "/origin/d" | head -n 1)
+if [ -z "$remote" ]; then
+	# no remote repo other than origin
+	remote="origin"
+fi
+
+git checkout "$branch"
+git pull "$remote" "$branch"
+git push origin "$branch"
+
+now=$(date +"%m-%d-%N-%Y")
+title=${1:-"$now"}
+git checkout -b "$title"
