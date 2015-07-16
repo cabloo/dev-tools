@@ -4,8 +4,7 @@ When run, `gitpr` creates a pull request in the first non-origin remote for the 
 
 Setup:
 =======
-- Put gitpr.py in a scripts directory (I use ~/scripts/python/) and add your github access token.
-- Put gitpr in /usr/bin/gitpr and set scripts_dir to the directory of gitpr.py
+- Run `install.sh`
 - Optional: install pyperclip with `sudo pip install pyperclip`. If pyperclip is installed, a link to the pull request will automatically be copied to your clipboard.
 
 Usage:

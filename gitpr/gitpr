@@ -1,6 +1,6 @@
 #!/bin/bash
 
-scripts_dir="~/scripts/python/"
+python_script="your_gitpr_location"
 
 head=$(git ls-remote --get-url origin | cut -d':' -f 2 | head -c -4)
 branch=$(git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/')
@@ -24,4 +24,4 @@ fi
 remote_name=$(git remote | sed "/origin/d" | head -n 1)
 remote=$(git ls-remote --get-url "$remote_name" | cut -d':' -f 2 | head -c -5)
 
-python "$scripts_dir"gitpr.py "$head" "$branch" "$commit" "$remote"
+python "$python_script" "$head" "$branch" "$commit" "$remote"

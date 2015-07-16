@@ -4,13 +4,15 @@ import requests
 import json
 import sys
 
-access_token = "your_github_access_token"
+access_token = "your_github_access_token".strip()
 
 head = sys.argv[1]
 branch = sys.argv[2]
 commit = sys.argv[3]
 repo = sys.argv[4]
-target_branch = 'dev' if repo == 'Cabloo/some_repo_that_uses_dev_branch' else 'master'
+target_branch = {
+    'Cabloo/some_repo_that_uses_dev_branch': 'dev',
+}.get(repo, 'master')
 
 data = json.dumps({
     'title': commit,

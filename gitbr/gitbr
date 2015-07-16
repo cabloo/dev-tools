@@ -2,7 +2,7 @@
 
 git stash
 
-branch=$(git branch | grep "dev" | tr -d '[[:space:]]')
+branch=$(git branch | grep "dev" | tr -d '[[:space:]]' | tr -d '*')
 if [ -z "$branch" ]; then
 	# no branch that has dev in the name
 	branch="master"

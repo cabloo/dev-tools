@@ -1,5 +1,6 @@
 #!/bin/bash
 
-. "web_server.sh"
-. "chrome.sh"
+. "utils.sh"
 . "atom.sh"
+. "chrome.sh"
+. "web_server.sh"
