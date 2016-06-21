@@ -12,5 +12,10 @@ packages=(
 sudo apt-get install -y ${packages[*]}
 sudo pip install -y pyperclip
 
+mkdir -p ~/scripts/bin
+
 cd "../gitpr"
 . "install.sh"
+cd "../install"
+
+cp "../gitbr/gitbr" ~/scripts/bin
