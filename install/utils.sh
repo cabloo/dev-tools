@@ -10,6 +10,7 @@ packages=(
 )
 
 sudo apt-get install -y ${packages[*]}
+sudo pip install -y pyperclip
 
 cd "../gitpr"
 . "install.sh"
