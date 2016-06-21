@@ -1,1 +1,1 @@
-cat "stub/.bashrc" >> $HOME/.bashrc
+cat "stub/bashrc.sh" >> $HOME/.bashrc
