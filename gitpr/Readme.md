@@ -10,9 +10,9 @@ Setup:
 Usage:
 =======
 - Fork a repository on GitHub
-- Clone your fork
+- Clone your fork (make sure to use SSH syntax)
 - cd to cloned repo directory
-- Add remote for original repository
+- Add remote for original repository (make sure to use SSH syntax, e.g. `git remote add main git@github.com:<repo>.git`)
 - Make changes and commit
 - run "gitpr"
 
