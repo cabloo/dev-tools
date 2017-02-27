@@ -19,7 +19,7 @@ Usage:
 It will push your changes to your fork, then submit a pull request from your fork to the original repository.
 
 ex. Fork https://github.com/atom/atom
-```shell
+```bash
 git clone git@github.com:Cabloo/atom.git
 cd atom
 git remote add main git@github.com:atom/atom.git
