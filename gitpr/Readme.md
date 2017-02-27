@@ -22,7 +22,7 @@ ex. Fork https://github.com/atom/atom
 ```shell
 git clone git@github.com:Cabloo/atom.git
 cd atom
-git remote add original_repo git@github.com:atom/atom.git
+git remote add main git@github.com:atom/atom.git
 touch testfile.txt
 git add testfile.txt
 git commit -m 'This will be the commit message and the title of the pull request'
