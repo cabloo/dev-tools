@@ -5,6 +5,7 @@ packages=(
     git
     curl
     terminator
+    fish
 
     python-pip # Python package manager
 )
