@@ -7,4 +7,6 @@ wget https://github.com/cabloo/dev-tools/archive/master.zip
 unzip master.zip
 cd dev-tools-master/install
 ./all.sh
+cd /tmp
+rm -rf dev-tools-master
 ```
