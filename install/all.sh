@@ -1,4 +1,4 @@
 #!/bin/bash
 
-. "utils.sh"
 . "chrome.sh"
+. "utils.sh"
