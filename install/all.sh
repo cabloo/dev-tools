@@ -1,9 +1,8 @@
 #!/bin/bash
 
 DIR=$(pwd)
-cd "$DIR"
-. "chrome.sh"
-cd "$DIR"
-. "slack.sh"
-cd "$DIR"
-. "utils.sh"
+$DIR/utils.sh
+$DIR/chrome.sh
+$DIR/slack.sh
+$DIR/vscode.sh
+$DIR/spotify.sh

@@ -1,17 +1,16 @@
 #!/bin/bash
 
+START_DIR=$(pwd)
 packages=(
     # Command line utils
     git
     curl
     terminator
     fish
-
-    python-pip # Python package manager
+    vim
 )
 
-sudo apt-get install -y ${packages[*]}
-sudo pip install pyperclip
+sudo apt install -y ${packages[*]}
 
 mkdir -p ~/scripts/bin
 
@@ -20,3 +19,4 @@ cd "../gitpr"
 cd "../install"
 
 cp "../gitbr/gitbr" ~/scripts/bin
+cd "$START_DIR"
